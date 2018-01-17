@@ -9,6 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var charImage: UIImageView!
     @IBOutlet weak var testLabel: UILabel!
     
     override func viewDidLoad() {
@@ -22,7 +23,9 @@ class ViewController: UIViewController {
     }
 
     @IBAction func changeText(_ sender: Any) {
-        testLabel.text = "It's-a Me, Mario!";
+        testLabel.text = "WAAAHHH!";
+        charImage.image = UIImage(named: "waluigi_running_by_nintega_dario-dbi591b")
+        
     }
     
 }
